@@ -1,0 +1,113 @@
+.header, .logo, .side-menu, .side-menu a, .close-btn {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.header {
+  width: 100vw;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background: #001930; /* azul média */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 100px;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  z-index: 20;
+}
+
+.hamburger span {
+  display: block;
+  width: 28px;
+  height: 4px;
+  background: #096C84; /* azul mais clara */
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -240px;
+  width: 220px;
+  height: 100vh;
+  background: #001930; /* azul média */
+  color: #fff;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+  padding: 30px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  transition: right 0.3s;
+  z-index: 30;
+}
+
+.side-menu.open {
+  right: 0;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-menu li {
+  margin-bottom: 18px;
+}
+
+.side-menu a {
+  color: #096C84;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.side-menu a:hover {
+  color: #fff;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #096C84;
+  font-size: 2rem;
+  align-self: flex-end;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 18, 38, 0.7); /* #001226 com transparência */
+  z-index: 20;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #096C84;
+  letter-spacing: 2px;
+}
+
+.logo-img {
+  height: 80px;
+  margin-right: 40px;
+}

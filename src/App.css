@@ -1,0 +1,193 @@
+.content {
+  padding-top: 110px; /* altura do header + espaçamento extra */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content h1 {
+  color: #096C84;
+  font-size: 3.2rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.subtitle {
+  color: #096C84; /* ou #001930 */
+  font-size: 1.7rem;   /* aumente aqui conforme desejar */
+  margin-top: 12px;
+  text-align: center;
+  font-weight: 400;
+  max-width: 600px;
+}
+
+.tipo-vestigio-container {
+  margin: 24px 0 16px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.tipo-vestigio-label {
+  font-weight: 600;
+  color: #096C84;
+  font-size: 1.1rem;
+}
+
+.tipo-vestigio-select {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1.5px solid #096C84;
+  font-size: 1.1rem;
+  background: #001930;      /* fundo escuro */
+  color: #fff;              /* texto claro */
+  transition: border 0.2s;
+  min-width: 240px;
+}
+
+.tipo-vestigio-select:focus {
+  outline: none;
+  border: 2px solid #41ABB4;
+  background: #001226;
+}
+
+.tipo-vestigio-select option[disabled] {
+  color: #aaa;
+}
+
+.cards-panel {
+  display: flex;
+  gap: 32px;
+  margin: 32px 0 0 0;
+  justify-content: center;
+}
+
+.card.resumo {
+  background: #001930;
+  color: #096C84;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 36px 48px;      /* aumente o padding */
+  display: flex;
+  align-items: center;
+  min-width: 260px;        /* aumente a largura mínima */
+  gap: 24px;               /* aumente o espaço interno */
+}
+
+.card-icon {
+  font-size: 3.2rem;       /* aumente o tamanho do ícone */
+  margin-right: 16px;
+}
+
+.card-number {
+  font-size: 2.8rem;       /* aumente o número */
+  font-weight: bold;
+  color: #fff;
+}
+
+.card-label {
+  font-size: 1.4rem;       /* aumente o texto do label */
+  color: #096C84;
+}
+.card-icon svg {
+  color: #096C84; /* ou outra cor da sua paleta */
+  font-size: 2.5rem;
+}
+
+.alert-card {
+  margin-top: 40px;
+  background: #001930;
+  color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 1140px; /* igual ao painel de cards */
+  justify-content: flex-start;
+}
+
+.alert-icon svg {
+  color: #096C84;
+  font-size: 2.2rem;
+}
+
+.alert-text {
+  font-size: 1.25rem;
+  flex: 1;
+}
+
+.alert-text strong {
+  color: #ff5252;
+  margin-right: 8px;
+}
+
+.alert-btn {
+  background: #41ABB4; /* azul turquesa médio */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.alert-btn:hover {
+  background: #096C84; /* azul mais clara */
+}
+
+.table-container {
+  margin-top: 48px;
+  background: #001930;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+  width: 2000px;
+  max-width: 1150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table-title {
+  color: #096C84;
+  font-size: 2rem;
+  margin-bottom: 24px;
+  text-align: left;
+  width: 100%;
+}
+
+.vestigios-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
+}
+
+.vestigios-table th, .vestigios-table td {
+  border: 1px solid #142b3a;
+  padding: 12px 8px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.vestigios-table th {
+  background: #001226;
+  color: #41ABB4;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.vestigios-table tr:nth-child(even) {
+  background: #001930;
+}
+
+.vestigios-table tr:nth-child(odd) {
+  background: #001226;
+}
